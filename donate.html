@@ -1,0 +1,13 @@
+<input id="idpromo" type="text" value="PROMO2D"/><br/>
+<input type="button" value="Apply promo code" onclick="scart.AddToCart('=idpromo')"/>
+
+	
+<select id="idSize"><option value="">Select Size</option><option>Small</option><option>Medium</option><option>Large</option></select>
+<select id="idColor"><option value="">Select Color</option><option>White</option><option>Blue</option><option>Pink</option></select>
+<input type="button" onclick="scart.AddToCart('TSHRT1','idSize','idColor');scart.Show()" value="Buy"/>
+
+<input type="button" value="Donate" onclick="scart.AddToCart('DONATE');scart.Show()">
+<input id="DONATE.price" type="text" value="5.00">
+
+<img src="donate.jpg" onclick="scart.AddToCart('DONATE');scart.Show()" style="cursor:pointer">
+<input id="DONATE.price" type="text" value="5.00">
